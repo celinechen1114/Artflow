@@ -51,6 +51,27 @@ body { /*default body style (black Verdana)*/
   text-align: center;
 }
 
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1E3FF;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.bottom-toolbar {
+  display: none;
+}
+
+.expanded {
+  display: block !important;
+}
+
+
+
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   .menu, .main, .right {

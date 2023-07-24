@@ -20,11 +20,38 @@ $('#default').on('click', function (e) { //jquery click event code for our "penc
     currentColor = 'black';  //change the color to black
     currentWidth = 5;       //change the width to 5
 })
-$('#thick-green').on('click', function (e) { //jquery button click code for our "green paint" button.
-    currentColor = 'green';
-    currentWidth = 15;
-})
+// $('#thick-green').on('click', function (e) { //jquery button click code for our "green paint" button.
+//     currentColor = 'green';
+//     currentWidth = 15;
+// })
 $('#eraser').on('click', function (e) { //jquery button click code for our eraser button.
     currentColor = 'white';
     currentWidth = 20;
 })
+
+// New code for toolbar
+$('.tool').on('click', function (e) {
+  currentColor = $(this).data('color');
+  currentWidth = $(this).data('width');
+
+  // Hide all toolbars
+  $('.toolbar').hide();
+
+  // Show the toolbar for the selected tool
+  $('#' + this.id + '-toolbar').show();
+});
+
+$('#default-color').on('input', function() {
+  currentColor = $(this).val();
+});
+
+$('#default-size').on('input', function() {
+  currentWidth = $(this).val();
+});
+
+$('#eraser-size').on('input', function() {
+  currentWidth = $(this).val();
+});
+
+
+

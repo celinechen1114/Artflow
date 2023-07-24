@@ -21,12 +21,15 @@
 
   <!-- Link to our Paperscript file containing our custom drawing app code, and associate it with the "my-canvas" Canvas Object defined in the HTML layout below-->
   <script type="text/paperscript" src="js/my-drawing-app.js" canvas="my-canvas"></script>
+  
+  
+  <link rel="stylesheet" href="css/styles.css">
 
   </head>
 
   <body>
-    <!-- Our row of buttons -->
-    <button type="button" class="btn" id = "default" >
+    <!-- Our row of ORIGINAL buttons -->
+    <!-- <button type="button" class="btn" id = "default" >
       <span class="material-symbols-outlined"> edit</span>
     </button>
 
@@ -36,12 +39,47 @@
 
     <button type="button" class="btn" id = "eraser" >
       <span class="material-symbols-outlined">circle</span>
-    </button>
+    </button> -->
+
+    <!-- NEW BUTTONS using "Tool class" -->
+
+    <div> 
+      <button type="button" class="btn tool" data-color="black" data-width="5" id="default">
+        <span class="material-symbols-outlined">edit</span>
+      </button>
+
+      <button type="button" class="btn tool" data-color="white" data-width="20" id="eraser">
+        <span class="material-symbols-outlined">circle</span>
+      </button>      
+    </div>
+    
+
+<!-- <button type="button" class="btn btn-success tool" data-color="green" data-width="15" id="thick-green">
+  <span class="material-symbols-outlined">format_paint</span>
+</button> -->
+
+
+<!-- Bernie's toolbar code -->
+<div id="default-toolbar" class="toolbar" style="display: none;">
+  <!-- Settings for default tool -->
+  Color: <input type="color" id="default-color" value="#9280A5">
+  Size: <input type="range" id="default-size" min="1" max="100" value="5">
+</div>
+
+<div id="eraser-toolbar" class="toolbar" style="display: none;">
+  <!-- Settings for eraser tool -->
+  Size: <input type="range" id="eraser-size" min="1" max="100" value="20">
+</div>
+
+
+
 
     <br> <!-- I used a simple line break here, but you might want to consider using a more sophisticated layout/formatting solution (e.g. Bootstrap rows and columns), especially if there's a lot of elements you want to cleanly organize, position, and format in your app. -->
 
-    <canvas id="my-canvas" width = "800" height = "600"></canvas> <!-- our Canvas object -->
+    <!-- Celine: The canvas size is set to iPad Pro -->
+    <canvas id="my-canvas" width = "1024" height = "1366"></canvas> <!-- our Canvas object -->
 
   </body>
+  
 
 </html>
