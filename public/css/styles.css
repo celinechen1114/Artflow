@@ -6,69 +6,65 @@ body { /*default body style (black Verdana)*/
   color:#000000; 
 }
 
-.menu { /* menu style */
-  float: left;
-  background-color: #ED2828;
-  width: 20%;
-  text-align: center;
+
+.main-toolbar {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  margin-top: 20px; /* Adjust the value as needed for the desired amount of translation */
 }
 
-.menu a { /* style of links within menus */
-  background-color: #28ED31;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: black;
+/* Style for all buttons within the main-toolbar */
+.main-toolbar .btn {
+  margin: 0 5px; /* Adjust the value as needed for the desired amount of spacing between buttons */
+  background-color: #91859b;;
 }
 
-.responsive { /* makes elements,resize responsively,*/
-  max-width:100%;
-  max-height:100%;
+.filter-buttons {
+  margin-top: 150px; /* Adds some space above the row */
 }
 
-.center { /*centers an element*/
-  position: relative;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, 0%);
-}
-
-.main {
-  float: left;
-  background-color: #dd2118;
-  width: 60%;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.right {
-  background-color: #49CAD2;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
+.filter-buttons .btn {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
-.toolbar {
+#my-canvas { /* DRAWING CANVAS */
+  border: 3px solid #957daa;
+  margin-top: 120px; /* This pushes the canvas down a bit from the top of the page */
+}
+
+
+.toolbar { /* OUR ADDITOINAL DROP DOWN TOOL BAR*/
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F1E3FF;
   height: 50px;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto; /* This will center the div horizontally */
+  border-radius: 30px; /* make edge curve round*/
   border-bottom: 1px solid #ccc;
 }
 
-.bottom-toolbar {
-  display: none;
+.logo-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #7A1FA2; /* Purple background color for the logo */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Comic Sans MS", cursive;
 }
 
-.expanded {
-  display: block !important;
+
+.logo-text {
+  color: white;
+  font-weight: bold;
 }
+
 
 
 
@@ -77,4 +73,17 @@ body { /*default body style (black Verdana)*/
   .menu, .main, .right {
     width: 100%;
   }
+}
+
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

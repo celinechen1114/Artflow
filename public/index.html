@@ -6,9 +6,12 @@
 <!DOCTYPE html>
 <html>
 
+
+
   <head>
   <!-- Load the Paper.js library (from http://paperjs.org/) -->
   <script type="text/javascript" src="js/paper-full.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/colorsys@1.0.3/dist/colorsys.min.js"></script>
 
   <!-- add Bootstrap 4 (from https://getbootstrap.com/docs/4.0/getting-started/download/)-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,12 +25,20 @@
   <!-- Link to our Paperscript file containing our custom drawing app code, and associate it with the "my-canvas" Canvas Object defined in the HTML layout below-->
   <script type="text/paperscript" src="js/my-drawing-app.js" canvas="my-canvas"></script>
   
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   
   <link rel="stylesheet" href="css/styles.css">
 
   </head>
 
   <body>
+
+    <div class="logo-container">
+      <span class="logo-text">Welcome to ARTFLOW</span>
+    </div>
+
     <!-- Our row of ORIGINAL buttons -->
     <!-- <button type="button" class="btn" id = "default" >
       <span class="material-symbols-outlined"> edit</span>
@@ -43,15 +54,42 @@
 
     <!-- NEW BUTTONS using "Tool class" -->
 
-    <div> 
+    <div class="main-toolbar"> 
+      <!-- draw button -->
       <button type="button" class="btn tool" data-color="black" data-width="5" id="default">
         <span class="material-symbols-outlined">edit</span>
       </button>
 
+      <!-- eraser button -->
       <button type="button" class="btn tool" data-color="white" data-width="20" id="eraser">
         <span class="material-symbols-outlined">circle</span>
       </button>      
+
+      <!-- Black & White filter button -->
+  <button type="button" class="btn" id="black-white">
+    B&W
+  </button>
+
+  <!-- Sepia button -->
+  <button type="button" class="btn" id="sepia">
+    Sepia
+  </button>
+
+  <!-- Tritanopia button -->
+  <button type="button" class="btn" id="tritanopia">
+    Tritanopia
+  </button>
+
+  <!-- Help button -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#helpModal">
+      Help
+  </button>
+
     </div>
+
+    
+   
+
     
 
 <!-- <button type="button" class="btn btn-success tool" data-color="green" data-width="15" id="thick-green">
@@ -59,27 +97,60 @@
 </button> -->
 
 
-<!-- Bernie's toolbar code -->
-<div id="default-toolbar" class="toolbar" style="display: none;">
-  <!-- Settings for default tool -->
-  Color: <input type="color" id="default-color" value="#9280A5">
-  Size: <input type="range" id="default-size" min="1" max="100" value="5">
-</div>
+   <!-- Bernie's toolbar code -->
+   <div id="default-toolbar" class="toolbar" style="display: none;">
+    <!-- Settings for default tool -->
+    Color: <input type="color" id="default-color" value="#9280A5">
+    Size: <input type="range" id="default-size" min="1" max="100" value="5">
+  </div>
 
-<div id="eraser-toolbar" class="toolbar" style="display: none;">
-  <!-- Settings for eraser tool -->
-  Size: <input type="range" id="eraser-size" min="1" max="100" value="20">
-</div>
-
-
+  <div id="eraser-toolbar" class="toolbar" style="display: none;">
+    <!-- Settings for eraser tool -->
+    Size: <input type="range" id="eraser-size" min="1" max="100" value="20">
+  </div>
 
 
     <br> <!-- I used a simple line break here, but you might want to consider using a more sophisticated layout/formatting solution (e.g. Bootstrap rows and columns), especially if there's a lot of elements you want to cleanly organize, position, and format in your app. -->
-
     <!-- Celine: The canvas size is set to iPad Pro -->
-    <canvas id="my-canvas" width = "1024" height = "1366"></canvas> <!-- our Canvas object -->
+    <canvas id="my-canvas" width = 1000 height = 600></canvas> <!-- our Canvas object -->
+
+  <!-- Help Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="helpModalLabel">Help</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Drawing Tool:</b>
+        <p>Click on the canvas and drag your cursor to draw.</p>
+
+        <b>Eraser Tool:</b>
+        <p>Click on the canvas and drag your cursor to erase.</p>
+
+        <b>Black & White Filter:</b>
+        <p>Applies a black and white filter to the entire canvas.</p>
+
+        <b>Sepia Filter:</b>
+        <p>Applies a sepia filter to the entire canvas.</p>
+
+        <b>Tritanopia Filter:</b>
+        <p>Applies a Tritanopia filter to the entire canvas, simulating how a color blind person would see the drawing.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </body>
   
+
+
 
 </html>
