@@ -1,5 +1,5 @@
 # Artflow 🎨🌟
-Artflow is an innovative digital art application designed to simplify the creative process. Our user-friendly interface, combined with a wide range of captivating filters and an interactive tutorial, makes digital art accessible and enjoyable for everyone.
+Artflow is an innovative digital art application designed to simplify the creative process. Our user-friendly interface, combined with a wide range of captivating filters and an interactive tutorial, makes digital art accessible and enjoyable for everyone. I primarily focused on the design aspects of our project, which included creating initial low-fidelity sketches, wireframing, and developing Figma prototypes. My team partner, Bernie, and I worked collaboratively on several key aspects. Together, we constructed a hierarchical task analysis and delved into understanding the challenges associated with creativity support tools. We also conducted a thorough task analysis and designed an interview protocol to gather user insights effectively. Additionally, we jointly applied our skills in implementing front-end programming techniques and responsive design, including the integration of touch gestures.
 
 ## Key Features 🔑
 - **User-Friendly Interface:** Designed for ease of use, ensuring a smooth creative experience.
@@ -7,7 +7,7 @@ Artflow is an innovative digital art application designed to simplify the creati
 - **Interactive Tutorial:** Guides users through the app's tools and features to fully unleash creativity.
 
 ## Figma Prototype 🖌️
-Explore our design in detail: [View Prototype on Figma](https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design)
+Explore my design in detail: [View Prototype on Figma](https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design)
 
 ## Video Demonstration 📹
 Watch our app in action: [Artflow Demo on YouTube](https://www.youtube.com/watch?v=8mE2SHKVuQA)
