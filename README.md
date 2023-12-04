@@ -1,5 +1,7 @@
 # Artflow
 
+# Figma Prototype: https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design (Solo) 
+
 # Project Description:
 Our website addresses a recognized pain point - the complexity of existing digital art applications. 
 To make the creative process enjoyable and accessible for everyone, we've created a user-friendly interface with a wide selection of captivating filters inspired by popular trends and artistic styles. 
