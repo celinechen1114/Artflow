@@ -1,7 +1,7 @@
 # Artflow
 
 # Figma Prototype: 
-https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design (Entirely made my me) 
+https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design (Entirely made by me) 
 
 # Project Description:
 Our website addresses a recognized pain point - the complexity of existing digital art applications. 
