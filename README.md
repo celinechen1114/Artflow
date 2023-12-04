@@ -1,6 +1,4 @@
-# Artflow 🎨
-
-## Overview 🌟
+# Artflow 🎨🌟
 Artflow is an innovative digital art application designed to simplify the creative process. Our user-friendly interface, combined with a wide range of captivating filters and an interactive tutorial, makes digital art accessible and enjoyable for everyone.
 
 ## Key Features 🔑
