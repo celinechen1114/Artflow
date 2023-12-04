@@ -8,7 +8,6 @@ Our website addresses a recognized pain point - the complexity of existing digit
 To make the creative process enjoyable and accessible for everyone, we've created a user-friendly interface with a wide selection of captivating filters inspired by popular trends and artistic styles. 
 Additionally, we've included an interactive tutorial that guides users through the app's tools and features, ensuring they can fully unleash their creativity.
 With our simple and engaging platform, users can effortlessly apply Instagram-like filters to their digital drawings, transforming them into mesmerizing works of art. 
-Let your imagination soar as you explore the world of digital art with ease and excitement.
 
 # Video Demo:
 https://www.youtube.com/watch?v=8mE2SHKVuQA 
