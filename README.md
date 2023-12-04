@@ -10,7 +10,8 @@ I primarily focused on the design aspects of our project, which included creatin
 
 ## Figma Prototype 🖌️
 Explore my design in detail: [View Prototype on Figma](https://www.figma.com/proto/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=21-2241&t=Iyis4qJ6Sp4nBn6g-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=16%3A384&mode=design)
-Explore my Figma design in detail: [View Figma Design page] (https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design) 
+
+Explore my Figma design in detail: [View Figma Design page](https://www.figma.com/file/GV5nMYUnRwXQbvDIdt8mQn/Project-4-prototype?type=design&node-id=0-1&mode=design) 
 
 
 ## Video Demonstration 📹
